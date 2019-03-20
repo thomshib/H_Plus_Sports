@@ -52,7 +52,7 @@ namespace H_Plus_Sports
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            var connection = @"Server=tcp:shibut.database.windows.net,1433;Initial Catalog=H_Plus_Sports;Persist Security Info=False;User ID=shibu;Password=Sparse.1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            var connection = @"Server=tcp:shibut.database.windows.net,1433;Initial Catalog=H_Plus_Sports;Persist Security Info=False;User ID=shibu;Password=;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             services.AddDbContext<H_Plus_SportsContext>(options => options.UseSqlServer(connection));
         }
 
