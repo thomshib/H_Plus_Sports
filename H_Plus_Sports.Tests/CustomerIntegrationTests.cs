@@ -14,6 +14,7 @@ namespace H_Plus_Sports.Tests
         {
             var server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
             _client = server.CreateClient();
+            //
         }
 
         [TestMethod]
